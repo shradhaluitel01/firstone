@@ -4,8 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function validateform()
+        {
+            var x= document.form.Name.value;
+            if (x=="")
+            {
+                alert("Name must be filled out");
+                return false;
+            }
+            var y= document.form.Email.value;
+            if (y=="")
+            {
+                alert("Email must be filled out");
+                return false;
+            }
+            var a= document.form.Passwordone.value;
+            var b= document.form.Passwordtwo.value;
+            if(a!=b)
+            {
+                alert("password dont match");
+                return false;
+            }
+        }
+    </script>
 </head>
 <body>
+<form name="form" method="post" action="" onsubmit="return validateform()">
     
+    Name<input type="text" name="Name"><br>
+    Email<input type="text" name="Email"><br>
+    NewPassword<input type="password" name="Passwordone"><br>
+    Re-enter Password<input type="password" name="Passwordtwo"><br>
+    Age<input type="number" name="Age"><br>
+    Address <br><textarea cols="20" rows="10"></textarea><br>
+    Gender <br>
+    <input type="radio" name="Gender"  value="male">male <br>
+    <input type="radio" name="Gender"  value="Female">Female <br>
+    <input type="radio" name="Gender"  value="other">other <br>
+    country <br>
+    <select name="country">
+<option value="Nepal">Nepal</option><br>
+<option value="China">China</option><br>
+<option value="India">India</option><br>
+
+    </select><br>
+    <input type="submit" value="submit">
+
+</form>
 </body>
 </html>
