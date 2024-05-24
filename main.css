@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+p{
+    color:grey;
+}
+
+.name{
+    font-family: cursive, 'Times new Roman';
+     font-weight:900 ;
+     border-style: double;
+     border-width: 10px;
+     border-color: red;
+     border-radius: 10px;
+     padding: 50px 10px 50px 50px;
+     margin: auto;
+     width: 250px;
+     height: 250px;
+     background-color: black;
+     color: white;
+     overflow: scroll;
+
+}
+
+#name{
+    font-family: shradha;
+     font-style:itallic ;
+     font-size: 50px;
+     margin: 5px;
+     text-shadow: 10px 10px 6px coral;
+     
+}
+.header2{
+    font-size: 900;
+    font-style: oblique;
+        
+}
+/* this is comment */
+@font-face {
+    font-family:shradha ;
+    src: url(./fonts/RobotoCondensed-Regular.ttf);
+}
+.photo{
+    border-top: 20px solid rgb(162, 23, 23) ;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    
+}
+.images{
+    float: left;
+    float: right;
+}
